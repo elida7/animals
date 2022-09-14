@@ -16,6 +16,7 @@ class AnimalAdapter(private val animalesList: List<Animal>) : RecyclerView.Adapt
     override fun onBindViewHolder(holder: AnimalViewHolder, position: Int) {
         val item = animalesList[position]
         holder.render(item)
+        println("hola mundo")
     }
 
     override fun getItemCount(): Int = animalesList.size
